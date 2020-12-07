@@ -1,0 +1,16 @@
+// This is used for responsive thumbnails
+
+.thumbnail {
+  position: relative;
+  overflow: hidden;
+  display: block;
+
+  img {
+    @include object-fit(cover, center);
+    display: block;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+}
