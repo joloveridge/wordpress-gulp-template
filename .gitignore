@@ -4,3 +4,5 @@
 .idea/wordpress-gulp-template.iml
 node_modules
 .idea/vcs.xml
+.idea/inspectionProfiles/profiles_settings.xml
+assets
