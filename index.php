@@ -1,36 +1,22 @@
 <?php include('header.php'); ?>
 
-<main id="maincontent" class="padding">
+<main id="maincontent">
     <div class="wrapper">
-        <h1>Heading 1</h1>
-        <h2>Heading 2</h2>
-        <h3>Heading 3</h3>
-        <h4>Heading 4</h4>
-        <h5>Heading 5</h5>
-        <h6>Heading 6</h6>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu dictum urna, nec posuere enim. Ut mattis, urna quis facilisis vulputate, dui sem iaculis lorem, sit amet tempus metus magna id nisl.</p>
-        <p>Vestibulum suscipit quam vitae enim tincidunt, non blandit risus auctor. Mauris dui risus, sagittis et faucibus ut, egestas aliquam ex. Donec vel arcu vitae arcu venenatis sagittis vitae at orci. Nulla id purus ac eros posuere aliquam quis sed lacus. Nulla facilisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at elementum leo, eu convallis elit. Praesent id nisi aliquet, semper est vel, sollicitudin orci. Nunc rutrum justo sit amet aliquam vulputate. Cras egestas enim risus, id condimentum neque pretium vel. In vulputate consectetur neque sit amet tincidunt. Pellentesque sodales a metus in fermentum. Vestibulum vitae justo porttitor, tempus mauris in, mollis neque.</p>
-        <a href="#" class="button">Button</a>
-
-        <div class="thumbnail">
-            <img src="http://placekitten.com/200/300"  alt="" />
-        </div>
-
-        <h2>Accordion</h2>
-        <button class="accordion">Section 1</button>
-        <div class="panel">
-            <p>Lorem ipsum...</p>
-        </div>
-
-        <button class="accordion">Section 2</button>
-        <div class="panel">
-            <p>Lorem ipsum...</p>
-        </div>
-
-        <button class="accordion">Section 3</button>
-        <div class="panel">
-            <p>Lorem ipsum...</p>
-        </div>
+        <?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
+            <article id="post-<?php the_ID(); ?>" <?php post_class('news-article'); ?>>
+                <?php if ( has_post_thumbnail() ) { ?>
+                    <div class="news-article__image">
+                        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'large' ); ?></a>
+                    </div>
+                <?php } else { ?> <?php } ?>
+                <div class="news-article__content">
+                    <h2><?php the_title(); ?></h2>
+                    <p><?php echo excerpt(30); ?></p>
+                    <a href="<?php the_permalink(); ?>" class="read-more">Read more</a>
+                </div>
+            </article>
+            <?php endwhile; ?>
+        <?php endif; ?>
     </div>
 </main>
 
