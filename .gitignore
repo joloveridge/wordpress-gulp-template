@@ -1,8 +1,7 @@
 
-.idea/misc.xml
-.idea/modules.xml
-.idea/wordpress-gulp-template.iml
+.idea
 node_modules
 .idea/vcs.xml
 .idea/inspectionProfiles/profiles_settings.xml
 assets
+.DS_Store
