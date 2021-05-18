@@ -2,8 +2,31 @@
   background: $footer-background;
   width: 100%;
   padding: 40px 0;
+  color: $footer-text;
 
-  p, h2, h3 {
+  p, h2, h3, h4, a {
     color: $footer-text;
+  }
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__col {
+    width: 25%;
+
+    @include max-screen(767px) {
+      width: 100%;
+      margin-bottom: $spacing*4;
+    }
+  }
+
+  &__bottom {
+    background: rgba(0,0,0,0.9);
+
+    p {
+      font-size: 0.875rem;
+    }
   }
 }

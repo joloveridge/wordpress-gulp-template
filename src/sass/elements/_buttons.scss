@@ -1,7 +1,7 @@
 $button-background: $brand;
 $button-text:       $white;
 
-.button {
+.button, .wp-block-button__link {
   padding: 10px 28px;
   border-radius: $base-radius;
   display: inline-block;
@@ -21,4 +21,8 @@ $button-text:       $white;
     border: 1px solid $button-background;
     color: $brand;
   }
+}
+
+.wp-block-buttons {
+  margin-bottom: $spacing*2;
 }

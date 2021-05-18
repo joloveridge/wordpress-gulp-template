@@ -19,11 +19,21 @@
 @import "elements/thumbnail";
 @import "elements/browserupgrade";
 
+@import "plugins/slick-theme";
+@import "plugins/slick";
+
 @import "objects.wrappers";
+
+@import "wp-blocks/wp-block-image";
+@import "wp-blocks/wp-block-quote";
+@import "wp-blocks/wp-block-columns";
 
 @import "components/header";
 @import "components/footer";
 @import "components/menu";
 @import "components/open-button";
+@import "components/news-article";
+@import "components/hero";
+@import "components/social";
 
 @import "trumps.generic";

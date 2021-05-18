@@ -1,0 +1,27 @@
+.wp-block-image {
+  margin-bottom: $spacing*4;
+  img {
+    @include object-fit(cover, center);
+    display: block;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  figcaption {
+    font-style: italic;
+    text-align: center;
+
+    &:before {
+      content: "";
+      border: solid black;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 3px;
+      transform: rotate(-135deg);
+      -webkit-transform: rotate(-135deg);
+      margin-right: $spacing;
+    }
+  }
+}

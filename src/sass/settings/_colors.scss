@@ -3,7 +3,7 @@
 $white:		      #FFFFFF;
 $black: 	      #000000;
 $red:             red;
-
+$grey-light:      rgba(0,0,0,0.1);
 
 // Theme styles
 
@@ -25,6 +25,7 @@ $footer-text:       $white;
 
 // Header
 
+$header-color:      $grey-light;
 $menu-link:         $black;
 $menu-link-current: $brand;
 $menu-link-hover:   $brand;

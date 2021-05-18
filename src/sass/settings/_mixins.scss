@@ -35,6 +35,7 @@
   or object-fit and object-position:
   @include object-fit(cover, top);
 */
+
 @mixin object-fit($fit: fill, $position: null){
   -o-object-fit: $fit;
   object-fit: $fit;
@@ -46,3 +47,14 @@
     font-family: 'object-fit: #{$fit}';
   }
 }
+
+// Set tints and shadows of your colours
+
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+

@@ -1,17 +1,31 @@
 .header {
-  text-align: center;
   position: relative;
   z-index: 10;
-  padding: 30px 0;
+  padding: $spacing*2 0;
+  background-color: $header-color;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
 
   &__logo {
     display: block;
-    float: left;
+    width: 200px;
+    @include flex-vertical-center;
+
+    h2 {
+      margin-bottom: 0;
+    }
+    a {
+      display: block;
+    }
   }
 
   nav {
-    width: 600px;
-    float: right;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
 
     .button {
       position: absolute;

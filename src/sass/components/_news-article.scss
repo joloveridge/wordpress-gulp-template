@@ -1,0 +1,30 @@
+.news-article {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__image {
+    width: 40%;
+    @include max-screen(767px) {
+      width: 100%;
+    }
+
+    img {
+      @include object-fit(cover, center);
+      display: block;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+  }
+
+  &__content {
+    width: 60%;
+    padding: $spacing*4;
+    @include flex-vertical-center;
+
+    @include max-screen(767px) {
+      width: 100%;
+    }
+  }
+}
