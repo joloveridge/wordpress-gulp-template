@@ -17,6 +17,8 @@
                 <address>
                     <?php the_field('office_address', 'options'); ?>
                 </address>
+                <?php the_field('email_address', 'options'); ?>
+                <?php the_field('phone_number', 'options'); ?>
             </div>
             <div class="footer__col">
                 <h4>Social Media</h4>
