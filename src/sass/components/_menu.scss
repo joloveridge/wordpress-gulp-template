@@ -1,5 +1,9 @@
 .main-menu {
   @include flex-vertical-center;
+  @include max-screen($menu-mobile-breakpoint) {
+    display: block;
+    text-align: center;
+  }
 
   @include max-screen($menu-mobile-breakpoint) {
     opacity: 0;
