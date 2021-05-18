@@ -5,3 +5,4 @@ node_modules
 .idea/inspectionProfiles/profiles_settings.xml
 assets
 .DS_Store
+npm-shrinkwrap.json
