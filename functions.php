@@ -20,9 +20,7 @@ add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
 add_theme_support( 'menus' );
 add_theme_support('post-thumbnails');
 set_post_thumbnail_size( 1568, 9999 );
-add_action('widgets_init', 'customtheme_widgets_init');
 add_theme_support( 'title-tag' );
-add_filter('body_class', 'add_custom_body_class');
 
 
 // Adds html5 support
