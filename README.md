@@ -29,6 +29,28 @@ This will run the project, and should open the project in a browser under http:/
 
 The gulpfile has a watch task which means every time you update a php, sass, image, or js file it will instantly re-run the gulp task and reload the project in the browser.
 
+# Troubleshooting
+
+If running an older version of Gulp, you may run into the following error when trying to run Gulp:
+
+``` ReferenceError: primordials is not defined ```
+
+This can be solved by deleting the node_modules folder, and creating a file in the theme called npm-shrinkwrap.json. Simple add this code:
+
+```
+{
+    "dependencies": {
+        "graceful-fs": {
+            "version": "4.2.2"
+        }
+    }
+}
+```
+
+Then run ``` npm install ``` again. Once the node_modules are installed, you can run ``` gulp``` and everything should work. 
+
+More info in this article here https://ourcodeworld.com/articles/read/1188/how-to-solve-gulp-exception-reference-error-primordials-is-not-defined-error 
+
 # Sass set up
 
 I'm using Sass for this project, and I've included some tools that might be helpful
