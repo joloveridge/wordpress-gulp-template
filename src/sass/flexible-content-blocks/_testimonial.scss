@@ -32,27 +32,6 @@
       height: 250px;
     }
 
-    &:before {
-      content: "";
-      background-image: url("../img/brand-arrow.svg");
-      background-repeat: no-repeat;
-      background-size: contain;
-      width: 432px;
-      height: 331px;
-      position: absolute;
-      z-index: -1;
-      left: -50%;
-      top: -40px;
-
-      @include max-screen(1279px) {
-        left: -80%;
-      }
-
-      @include max-screen(1023px) {
-        left: -50%;
-      }
-    }
-
     img {
       @include object-fit(cover, center);
       display: block;

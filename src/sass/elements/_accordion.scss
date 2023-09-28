@@ -1,0 +1,20 @@
+.accordion {
+  cursor: pointer;
+  width: 100%;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  color: $brand;
+}
+
+.accordion-panel {
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+
+  &__inner {
+    padding: 24px 0;
+  }
+}
