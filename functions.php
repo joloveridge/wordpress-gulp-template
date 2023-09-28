@@ -4,7 +4,6 @@
 
 function add_theme_scripts() {
 //    wp_enqueue_style( 'typekit', 'https://use.typekit.net/your-code-here.css' );
-    wp_enqueue_style( 'fontawesome', 'https://use.fontawesome.com/releases/v5.7.1/css/all.css' );
 //    wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap', false );
     wp_enqueue_style( 'main-styles', get_stylesheet_directory_uri() . '/assets/css/main.css', false, '1.0', 'all' );
     wp_deregister_script('jquery'); // remove original WordPress jQuery
