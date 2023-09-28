@@ -1,0 +1,109 @@
+{
+    "key": "group_6511944d51497",
+    "title": "Social Media",
+    "fields": [
+        {
+            "key": "field_6511944daa7b2",
+            "label": "Social Media",
+            "name": "social_media",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Row",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_65119458aa7b3",
+                    "label": "Title",
+                    "name": "title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33.3",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "Facebook",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_6511944daa7b2"
+                },
+                {
+                    "key": "field_65119461aa7b4",
+                    "label": "FontAwesome Icon Name",
+                    "name": "icon",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "<strong><a href=\"https:\/\/fontawesome.com\/v5\/search?o=r&m=free&f=brands\" target=\"_blank\">View FontAwesome v5 Brands Icon Reference<\/a><\/strong>",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33.4",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "fab fa-facebook",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_6511944daa7b2"
+                },
+                {
+                    "key": "field_65119486aa7b5",
+                    "label": "URL",
+                    "name": "url",
+                    "aria-label": "",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33.3",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "https:\/\/www.facebook.com\/",
+                    "parent_repeater": "field_6511944daa7b2"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options"
+            }
+        ]
+    ],
+    "menu_order": 90,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1695699610
+}

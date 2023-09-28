@@ -1,0 +1,31 @@
+.general-text-block {
+
+  &__flex {
+    display: flex;
+
+    &--centre {
+      justify-content: center;
+      text-align: center;
+    }
+
+    &--right {
+      justify-content: flex-end;
+    }
+  }
+
+  &__inner {
+    width: 45%;
+
+    @include max-screen(1279px) {
+      width: 60%;
+    }
+
+    @include max-screen(1023px) {
+      width: 70%;
+    }
+
+    @include max-screen(767px) {
+      width: 100%;
+    }
+  }
+}

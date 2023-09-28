@@ -1,0 +1,144 @@
+.text-image-block {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  overflow: hidden;
+
+  &--image-right {
+    flex-direction: row;
+
+    .text-image-block__content {
+      padding: 0 70px;
+
+      @include max-screen(767px) {
+        padding: 40px 25px;
+      }
+    }
+  }
+
+  &.background-white {
+    .text-image-block__content {
+      @include max-screen(767px) {
+        padding: 40px 0;
+      }
+    }
+  }
+
+  &__content {
+    width: 50%;
+    @include flex-vertical-center;
+    padding-left: 70px;
+
+    @include max-screen(1023px) {
+
+    }
+
+    @include max-screen(767px) {
+      width: 100%;
+      padding: 30px;
+    }
+
+    .button {
+      margin-top: 40px;
+    }
+
+    p {
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__icon {
+    width: 50px;
+    margin-bottom: 26px;
+  }
+
+  &__image {
+    width: 50%;
+
+    @include max-screen(767px) {
+      width: 100%;
+    }
+  }
+
+  // Full width block
+
+  &__full-width {
+    position: relative;
+
+    @include max-screen(767px) {
+      padding-bottom: 320px;
+    }
+
+    .text-image-block {
+
+    }
+
+    .text-image-block__content {
+      padding: 125px 70px 125px 0;
+
+      @include max-screen(1279px) {
+        padding: 80px 70px 80px 0;
+      }
+
+      @include max-screen(1023px) {
+        padding: 50px 50px 50px 0;
+      }
+
+      @include max-screen(767px) {
+        padding: 40px 0;
+      }
+    }
+
+    .text-image-block__image {
+      position: absolute;
+      right: 0;
+      top:0;
+      height: 100%;
+      border-radius: 0;
+
+      @include max-screen(767px) {
+        position: absolute;
+        bottom: 0;
+        top: auto;
+        height: 300px;
+      }
+
+      img {
+        @include object-fit(cover, center);
+        display: block;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        border-radius: 0;
+      }
+    }
+
+    &--image-left {
+
+      .text-image-block__content {
+        padding: 125px 0 125px 70px;
+
+        @include max-screen(1279px) {
+          padding: 80px 0 80px 70px;
+        }
+
+        @include max-screen(1023px) {
+          padding: 50px 0 50px 50px;
+        }
+
+        @include max-screen(767px) {
+          padding: 40px 20px;
+        }
+      }
+
+      .text-image-block__image {
+        right: auto;
+        left: 0;
+      }
+    }
+  }
+}

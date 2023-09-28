@@ -1,0 +1,77 @@
+.testimonial-cols {
+
+  @include max-screen(767px) {
+    margin-bottom: 40px;
+  }
+
+  /* the slides */
+  .slick-slide {
+    margin: 0 10px;
+  }
+
+  /* the parent */
+  .slick-list {
+    margin: 0 -10px;
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    background: $brand;
+    z-index: 1;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    @include max-screen(1023px) {
+      flex-direction: row;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    @include max-screen(767px) {
+      flex-direction: column;
+    }
+  }
+
+  &__logo {
+    img {
+      width: 70%;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__top {
+    display: flex;
+    font-style: normal;
+    min-height: 80px;
+  }
+
+  &__image {
+    width: 80px;
+    height: 80px;
+    margin-right: 17px;
+
+    img {
+      @include object-fit(cover, center);
+      display: block;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      border-radius: 100%;
+    }
+  }
+
+  &__info {
+    flex: 1;
+    @include flex-vertical-center;
+  }
+}

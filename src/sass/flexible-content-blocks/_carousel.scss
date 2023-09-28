@@ -1,0 +1,26 @@
+.carousel {
+
+  &__slide {
+    padding: 0 20px;
+  }
+
+  &__image {
+    height: 350px;
+    margin-bottom: 30px;
+
+    img {
+      @include object-fit(cover, center);
+      display: block;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      border-radius: 0;
+    }
+  }
+
+  &__title {
+    font-size: 1.75rem;
+    margin-bottom: 8px;
+  }
+}

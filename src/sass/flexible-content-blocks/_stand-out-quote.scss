@@ -1,0 +1,40 @@
+.stand-out-quote {
+
+  &__quote {
+    background: transparent;
+    padding: 0;
+  }
+
+  .text-size {
+
+    &--small {
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+
+      @include max-screen(767px) {
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
+    }
+
+    &--medium {
+      font-size: 2rem;
+      line-height: 2.5rem;
+
+      @include max-screen(767px) {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+      }
+    }
+
+    &--large {
+      font-size: 4rem;
+      line-height: 4.5rem;
+
+      @include max-screen(767px) {
+        font-size: 2rem;
+        line-height: 2.5rem;
+      }
+    }
+  }
+}

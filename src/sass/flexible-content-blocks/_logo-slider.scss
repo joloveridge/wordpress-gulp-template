@@ -1,0 +1,19 @@
+.logo-slider {
+
+  @include max-screen(767px) {
+    padding: 0 5%;
+  }
+
+  &__title {
+    margin-bottom: 70px;
+  }
+
+  .slick-next {
+    right: -40px;
+
+  }
+
+  .slick-prev {
+    left: -40px;
+  }
+}

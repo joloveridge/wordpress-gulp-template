@@ -1,0 +1,63 @@
+{
+    "key": "group_651192b00ce86",
+    "title": "Footer Options",
+    "fields": [
+        {
+            "key": "field_651192b04944c",
+            "label": "Footer Menus",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Footer menus are managed in the WordPress <a href=\"\/wp-admin\/nav-menus.php?action=edit&menu=0\">menu editor<\/a>.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_651192fae8b36",
+            "label": "Copyright Text",
+            "name": "copyright_text",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "%y% will be replaced with the current year.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "&copy; The Natural Leader %y%. All rights reserved.",
+            "maxlength": 140,
+            "placeholder": "&copy; The Natural Leader %y%. All rights reserved.",
+            "prepend": "",
+            "append": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options"
+            }
+        ]
+    ],
+    "menu_order": 100,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1695654852
+}

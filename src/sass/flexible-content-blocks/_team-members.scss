@@ -1,0 +1,51 @@
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__card {
+    width: 22%;
+    margin: 0 1.5% 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include max-screen(1280px) {
+      width: 30.3333%;
+    }
+
+    @include max-screen(1024px) {
+      width: 47%;
+    }
+
+    @include max-screen(768px) {
+      width: 100%;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    height: 250px;
+    margin-bottom: 24px;
+
+    img {
+      @include object-fit(cover, center);
+      display: block;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__role {
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,62 @@
+.statistics-block {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 10px;
+  padding:  50px 32px;
+
+  @include max-screen(767px) {
+    width: 100%;
+    padding: 32px 0;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  &__grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+    margin: 0 -1%;
+
+    &__stat {
+      padding: 20px;
+      flex: 1;
+      max-width: 23%;
+      margin: 0 1% 40px;
+
+      @include max-screen(767px) {
+        padding: 0;
+        flex: 0 0 calc(46% - 10px);
+        max-width: 48%;
+      }
+
+      @include max-screen(414px) {
+        max-width: 100%;
+      }
+
+      h3, h4 {
+        color: $brand;
+        font-size: 2.5rem;
+        font-weight: 600;
+        font-family: $header-font;
+      }
+
+      p {
+        font-size: 1.25rem;
+        line-height: 2rem;
+
+        @include max-screen(414px) {
+          font-size: 1rem;
+          line-height: 1.5rem;
+        }
+      }
+    }
+  }
+}

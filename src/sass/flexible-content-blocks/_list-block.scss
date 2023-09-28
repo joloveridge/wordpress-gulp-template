@@ -1,0 +1,37 @@
+.list-block {
+  margin: 40px auto 0;
+
+  @include max-screen(767px) {
+    width: 100%;
+    padding: 32px 0;
+  }
+
+  &__grid {
+    columns: 2;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    @include max-screen(767px) {
+      columns: 1;
+    }
+  }
+
+  &__item {
+    padding: 0 0 0 30px;
+    position: relative;
+    margin: 0 0 15px;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+
+    &:before {
+      content: "\f00c";
+      font-family: "Font Awesome 6 Pro";
+      font-weight: 900;
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: $brand;
+    }
+  }
+}
