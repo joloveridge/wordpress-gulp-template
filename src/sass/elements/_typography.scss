@@ -52,3 +52,15 @@ p {
   font-size: 1rem;
   line-height: 1.5rem;
 }
+
+.large-title {
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+
+.sub-title {
+  font-size: 0.875rem;
+  line-height: 1.2rem;
+  text-transform: uppercase;
+  margin-bottom: $spacing;
+}
