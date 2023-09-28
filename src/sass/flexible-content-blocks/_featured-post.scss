@@ -1,0 +1,61 @@
+.featured-post {
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px;
+    background: rgba(255,255,255,0.7);
+    box-shadow: 0px 4px 27px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 0;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 58px;
+    margin-top: 35px;
+
+    @include max-screen(767px) {
+      padding: 20px;
+    }
+  }
+
+  &__image {
+    width: 47%;
+    background: $brand;
+
+    @include max-screen(767px) {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    img {
+      @include object-fit(cover, center);
+      display: block;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      border-radius: 0;
+    }
+  }
+
+  &__content {
+    width: 47%;
+    @include flex-vertical-center;
+
+    @include max-screen(767px) {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  &__date {
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    color: rgba(0,0,0,0.8);
+    font-weight: 600;
+  }
+}

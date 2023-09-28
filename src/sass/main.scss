@@ -38,6 +38,22 @@
 @import "wp-blocks/wp-block-quote";
 @import "wp-blocks/wp-block-columns";
 
+@import "flexible-content-blocks/text-icon-cols";
+@import "flexible-content-blocks/text-image-cols";
+@import "flexible-content-blocks/general-text-block";
+@import "flexible-content-blocks/text-image-block";
+@import "flexible-content-blocks/logo-slider";
+@import "flexible-content-blocks/tab-container";
+@import "flexible-content-blocks/related-content";
+@import "flexible-content-blocks/featured-post";
+@import "flexible-content-blocks/carousel";
+@import "flexible-content-blocks/testimonial-cols";
+@import "flexible-content-blocks/team-members";
+@import "flexible-content-blocks/statistics-block";
+@import "flexible-content-blocks/testimonial";
+@import "flexible-content-blocks/list-block";
+@import "flexible-content-blocks/stand-out-quote";
+
 @import "components/header";
 @import "components/footer";
 @import "components/menu";

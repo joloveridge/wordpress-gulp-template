@@ -1,0 +1,160 @@
+.related-content {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px -1%;
+  z-index: 2;
+  position: relative;
+
+  @include max-screen(767px) {
+    margin-bottom: 40px;
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    background: linear-gradient(180deg, rgba(211, 66, 100, 0.9) 0%, rgba(35, 26, 58, 0.9) 100%);
+    border-radius: 10px;
+    z-index: 1;
+  }
+
+  &__card {
+    margin: 0 1%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: auto;
+    flex: 1;
+    margin-bottom: 40px;
+    min-width: 200px;
+
+    @include max-screen(1023px) {
+      min-width: 48%;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    background: $brand;
+    border-radius: 10px;
+    height: 250px;
+    margin-bottom: 30px;
+
+    @include max-screen(1023px) {
+      margin-bottom: 0;
+      height: 200px;
+    }
+
+    @include max-screen(767px) {
+      margin-bottom: 25px;
+    }
+
+    img {
+      @include object-fit(cover, center);
+      display: block;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__content {
+    width: 100%;
+    display: flex;
+    justify-content: initial;
+    flex-direction: column;
+
+    @include max-screen(767px) {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  &__title {
+    font-size: 1.25rem;
+    line-height: 1.65rem;
+    font-weight: 400;
+    position: relative;
+    z-index: 2;
+
+    @include max-screen(1023px) {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: $black;
+
+      &:hover {
+        color: $purple;
+      }
+
+      &:focus {
+        color: darken($purple, 10);
+      }
+    }
+  }
+
+  &__excerpt {
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+
+  &__bottom {
+    padding-bottom: 15px;
+    border-bottom: 1px dashed $border-color;
+    display: flex;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    color: rgba(0,0,0,0.1);
+    font-weight: 600;
+    margin-top: auto;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__date {
+    margin-right: 4px;
+
+    @include max-screen(1023px) {
+
+    }
+  }
+
+  &__cat {
+    text-transform: uppercase;
+    font-family: $primary-font;
+    font-size: 0.875rem;
+    line-height: normal;
+    margin-bottom: 8px;
+    color: $brand;
+  }
+
+  &__tag {
+    text-transform: uppercase;
+    font-family: $primary-font;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    z-index: 2;
+    color: $brand;
+
+    @include max-screen(1023px) {
+      top: 40px;
+      left: 40px;
+    }
+  }
+}

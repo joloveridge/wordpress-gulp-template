@@ -1,0 +1,120 @@
+.testimonial {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: $brand;
+  padding: 40px;
+
+  @include max-screen(1279px) {
+    width: 85%;
+  }
+
+  @include max-screen(1023px) {
+    width: 100%;
+    padding-top: 40px;
+  }
+
+  &__image {
+    width: 30%;
+    border-radius: 10px;
+    height: 270px;
+    position: relative;
+
+    @include max-screen(1279px) {
+      height: 220px;
+    }
+
+    @include max-screen(767px) {
+      width: 100%;
+    }
+
+    @include max-screen(414px) {
+      height: 250px;
+    }
+
+    &:before {
+      content: "";
+      background-image: url("../img/brand-arrow.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 432px;
+      height: 331px;
+      position: absolute;
+      z-index: -1;
+      left: -50%;
+      top: -40px;
+
+      @include max-screen(1279px) {
+        left: -80%;
+      }
+
+      @include max-screen(1023px) {
+        left: -50%;
+      }
+    }
+
+    img {
+      @include object-fit(cover, center);
+      display: block;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+
+  &__content {
+    width: 70%;
+    padding-left: 55px;
+    @include flex-vertical-center;
+
+    @include max-screen(767px) {
+      width: 100%;
+      padding: 30px;
+    }
+  }
+
+  &__job {
+    font-size: 0.875rem;
+  }
+
+  &__text {
+    margin-bottom: 24px;
+    font-size: 1.375rem;
+    line-height: normal;
+
+    @include max-screen(414px) {
+      font-size: 1.25rem;
+    }
+  }
+
+  &__info {
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+
+    @include max-screen(414px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__button {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    @include max-screen(414px) {
+      margin-top: 20px;
+    }
+  }
+
+  .button-arrow {
+
+  }
+}
